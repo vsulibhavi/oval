@@ -14,8 +14,9 @@ public class Main {
 		
 		Validator validator = new Validator();
 
-		BusinessObject bo = new BusinessObject("blabla");
-
+		BusinessObject bo = new BusinessObject();
+		bo.setName("blabla");
+		bo.setMailingAddress("Delhi");
 		// collect the constraint violations 
 		List<ConstraintViolation> violations = validator.validate(bo);
 
